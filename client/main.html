@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+
+    <main>
+        <form id="reg-form" action="" method="post">
+            <label for="stu-num">Student Number</label>
+            <input id="stu-num" type="text" required>
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" required>
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" required>
+            <label for="course-code">Course Code</label>
+            <input id="course-code" type="text" required>
+            <label for="course-title">Course Title</label>
+            <input id="course-title" type="text" required>
+            <label for="email">Email</label>
+            <input id="email" type="text">
+            <button id="add-name-btn">Add Student</button>
+        </form>
+        <div>
+            <input type="text" placeholder="Search by student code" id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
+        <table id="table table-striped">
+
+            <thead>
+                <th>Student Number</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section id="update-row" hidden="true"> 
+            <form method="PATCH" action="">
+
+                <label for="">First Name: </label>
+                <input type="text" id="update-fname-input" data-id>
+
+                <label for="">Last Name: </label>
+                <input type="text" id="update-lname-input" data-id="">
+
+                <label for="">Email: </label>
+                <input type="text" id="update-email-input" data-id="">
+
+                <label for="">Course Code: </label>
+                <input type="text" id="update-cCode-input" data-id="">
+
+                <label for="">Course Title: </label>
+                <input type="text" id="update-cTitle-input" data-id="">
+                <button id="update-row-btn">Update</button>
+            </form>
+            
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
