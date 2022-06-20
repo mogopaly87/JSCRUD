@@ -1,10 +1,10 @@
-**Description**
+<h3>Description</h3>
 
 <p>
 This is a simple CRUD application build using JavaScript, MySQL Database, Node.js, and Express.
 </p>
 
-**Prerequisites**
+<h3>Prerequisites</h3>
 
 <ul>
     <li>You must have MySQL database server installed on your computer</li>
@@ -14,6 +14,7 @@ This is a simple CRUD application build using JavaScript, MySQL Database, Node.j
     <li>In the '.env' file, set the following environment variables: </li><br>
     <p>
     <ul>
+        <li><strong>Remember to change 'your_database_username', and 'your_database_password' to your own MySQL username and passpord respectively.</strong></li>
         <li>PORT=5000</li>
         <li>USER=your_database_username</li>
         <li>PASSWORD=your_password</li>
